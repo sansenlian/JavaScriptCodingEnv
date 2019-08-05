@@ -2,11 +2,12 @@ import {read as readfile, print,_remaind} from './dist/file-io';
 
 var _line_index = 0;
 readfile().then(_data=>{
-    _remaind.warn(_data)
+    _remaind.info(_data)
     _data = _data.split('\n')
     function readline() {
         let res = _data[_line_index];
-        _remaind.warn("读取一行字符串: "+res)
+        _remaind.warn("读取一行字符串: ")
+        _remaind.info(res)
         _line_index++;
         return res;
     }
@@ -33,11 +34,25 @@ function customCode(readline,read_line) {
         return _newline_arr;
     }
     // ------------------------------------------------------- 编辑笔试部分代码
-
-
+    readline()
 
 
 
 
     // ========================================== 编辑结束
 }
+/* ------------------------------------------ 直接复制用于模拟debug
+
+    console.log("-------------- 1 -------------- ")
+    console.log("-------------- 2 -------------- ")
+    console.log("-------------- 3 -------------- ")
+    console.log("-------------- 4 -------------- ")
+    console.log("-------------- 5 -------------- ")
+    console.log("-------------- 6 -------------- ")
+    console.log("-------------- 7 -------------- ")
+    console.log("-------------- 8 -------------- ")
+    console.log("-------------- 9 -------------- ")
+    console.log("-------------- 10 -------------- ")
+    console.log("-------------- 11 -------------- ")
+    console.log("-------------- 12 -------------- ")
+*/
