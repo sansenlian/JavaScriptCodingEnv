@@ -1,0 +1,19 @@
+{
+  "name": "js-coding-env",
+  "version": "1.0.0",
+  "description": "可以作为牛客网或赛码网的本地编辑器",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel lib --out-dir dist && babel-node index.js"
+  },
+  "keywords": [
+    "牛客网js本地编辑器",
+    "赛码网js本地编辑器"
+  ],
+  "author": "sansenlian@foxmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "latest",
+    "babel-preset-env": "latest"
+  }
+}
