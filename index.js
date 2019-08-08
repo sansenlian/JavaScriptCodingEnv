@@ -1,4 +1,5 @@
 import {read as readfile, print,_remaind} from './dist/file-io';
+import {read} from "./lib/file-io";
 
 var _line_index = 0;
 readfile().then(_data=>{
@@ -25,24 +26,24 @@ readfile().then(_data=>{
 function customCode(readline,read_line) {
     // ========================================== 以下是自己的代码, 复制到编辑器
     let line;
-    function _newline(_line_in) {
+    const _newline =function (_line_in) {
         let _newline_arr = [];
         _line_in = _line_in.split(" ");
         let _line_length = _line_in.length;
         for(let i = 0;i<_line_length;i++)
             _newline_arr[i] = Number(_line_in[i]);
         return _newline_arr;
-    }
+    };
     // ------------------------------------------------------- 编辑笔试部分代码
     readline()
-
-
 
 
     // ========================================== 编辑结束
 }
 /* ------------------------------------------ 直接复制用于模拟debug
+        for(let i = 0;i<len;i++){
 
+        }
     console.log("-------------- 1 -------------- ")
     console.log("-------------- 2 -------------- ")
     console.log("-------------- 3 -------------- ")
