@@ -26,20 +26,26 @@ readfile().then(_data=>{
 function customCode(readline,read_line) {
     // ========================================== 以下是自己的代码, 复制到编辑器
     let line;
-    const _newline =function (_line_in) {
-        let _newline_arr = [];
-        _line_in = _line_in.split(" ");
-        let _line_length = _line_in.length;
-        for(let i = 0;i<_line_length;i++)
-            _newline_arr[i] = Number(_line_in[i]);
-        return _newline_arr;
-    };
+    // 读取的字符串转化为数字类型
+    const _newLine = (linestr)=>{
+        let line = linestr.split(' ');
+        line = line.map((item)=>Number(item)); // 字符串转成数字类型
+        return line;
+    }
     // ------------------------------------------------------- 编辑笔试部分代码
-    readline()
-
+    line = readline()
 
     // ========================================== 编辑结束
 }
+
+
+
+
+
+
+
+
+
 /* ------------------------------------------ 直接复制用于模拟debug
         for(let i = 0;i<len;i++){
 
